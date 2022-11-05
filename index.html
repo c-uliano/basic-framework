@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Base Framework</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>My Base Framework</h1>
+                <h2>That I've been using for my Coding Dojo classes</h2>
+                <p>Why code out the same thing for every project when I can do it once and reuse?</p>
+                <p><em>This version is reponsive, breakpoint at 980px</em></p>
+            </div>
+        </header>
+
+        <div class="container">
+            <section>
+                <h2>The Main Container</h2>
+                <p>General container keeping content inside 980px, <code>&#60;div class="container"&#62;&#60;/div&#62;</code></p>
+            </section>
+
+            <section>
+                <h2>Rows & Columns</h2>
+                <p>Basic flexbox design. Every row in it's own <code>&#60;div class="row"&#62;&#60;/div&#62;</code></p>
+                <p>Child div classes range, using flex for sizing, <code>col, col-2, col-3, col-4</code>, i.e. <code>&#60;div class="col-2"&#62;&#60;/div&#62;</code></p>
+                <div class="row">
+                    <div class="col">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem, iste. Non commodi illum ut similique doloribus quod adipisci corrupti nisi? At corporis maiores sit autem rem nihil molestias tenetur laboriosam!</p>
+                    </div>
+                    <div class="col-3">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem, iste. Non commodi illum ut similique doloribus quod adipisci corrupti nisi? At corporis maiores sit autem rem nihil molestias tenetur laboriosam!</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem, iste. Non commodi illum ut similique doloribus quod adipisci corrupti nisi? At corporis maiores sit autem rem nihil molestias tenetur laboriosam!</p>
+                    </div>
+                    <div class="col">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem, iste. Non commodi illum ut similique doloribus quod adipisci corrupti nisi? At corporis maiores sit autem rem nihil molestias tenetur laboriosam!</p>
+                    </div>
+                </div>
+
+                <h2>Nested Row</h2>
+                <p>Works fine.</p>
+                <div class="row">
+                    <div class="col-2">
+                        <h5>This column has a row with 2 columns</h5>
+                        <div class="row">
+                            <div class="col">
+                                <p>Non commodi illum ut similique doloribus quod adipisci corrupti nisi?</p>
+                            </div>
+                            <div class="col">
+                                <p>Non commodi illum ut similique doloribus quod adipisci corrupti nisi?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem, iste. Non commodi illum ut similique doloribus quod adipisci corrupti nisi? At corporis maiores sit autem rem nihil molestias tenetur laboriosam!</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Buttons</h2>
+                <p>The general button designs used in Coding Dojo wireframes.</p>
+                <p>Include the class <code>btn</code> on every button, it provides the general styling used on all buttons, like the border and box-shadow. Customize the button color, including hover effects, by adding another class, i.e. <code>&#60;div class="btn btn-teal"&#62;&#60;/div&#62;</code></p>
+                <p>Make the button the full width of it's container by adding class <code>w-100</code>, i.e. <code>&#60;div class="btn btn-teal w-100"&#62;&#60;/div&#62;</code></p>
+                <div class="row">
+                    <div class="col">
+                        <button class="btn btn-teal w-100">A Teal Button</button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-purple w-100">A Purple Button</button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-white w-100">A White Button</button>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h4>Probably more will come, will update.</h4>
+            </section>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
